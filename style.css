@@ -395,3 +395,106 @@ input[type="submit"] {
     transform: rotate(90deg);
     z-index: -50;
 }
+
+/* responsive  */
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    body {
+        margin: 0 1rem;
+        font-size: 12px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    #hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    #description {
+        gap: 1.5rem;
+    }
+
+    #description h1 {
+        font-size: 2.5rem;
+    }
+    #description h2 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    #description img {
+        width: 100%;
+        aspect-ratio: auto;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    /* services */
+    #services {
+        gap: 0.2rem;
+    }
+    .service-card {
+        width: 47%;
+        margin: 0 0.2rem 1rem 0.2rem;
+    }
+
+    /* destinations */
+    #destinations .list {
+        gap: 1.5rem;
+    }
+    .destination-card {
+        width: 100%;
+        height: 28rem;
+    }
+
+    /* booking */
+    #booking,
+    #testimonials {
+        flex-direction: column;
+    }
+
+    .booking-desc,
+    .testimonials-desc {
+        max-width: 100%;
+    }
+
+    /* newsletter */
+    #newsletter div {
+        padding: 3rem;
+    }
+
+    #newsletter div p {
+        font-size: large;
+        margin-bottom: 1rem;
+    }
+    form {
+        flex-direction: column;
+        align-items: center;
+    }
+    input[type="email"] {
+        width: 100%;
+    }
+    input[type="submit"] {
+        margin: 2rem auto;
+    }
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+}
+
+/* Desktop (1024px and above) */
+@media (min-width: 1024px) {
+}
